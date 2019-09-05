@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
 value = name_hash.collect do |name,value|
 value
 end
-value.sort
+value.sort!
 name_hash.key(value[0])
 end
 
